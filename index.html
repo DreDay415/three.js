@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>three.js webgl - watch</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<link type="text/css" rel="stylesheet" href="main.css">
-	</head>
+  <head>
+    <title>three.js webgl - watch</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="info">
+      <a href="https://threejs.org" target="_blank" rel="noopener">three.js</a>
+      - Watch model by
+      <a
+        href="https://sketchfab.com/3d-models/hamilton-khaki-field-automatic-watch-025dacb69a054f1dabd13d6f7d398cf8"
+        target="_blank"
+        rel="noopener"
+        >Kris Rivel</a
+      >
+      on
+      <a href="https://sketchfab.com" target="_blank" rel="noopener"
+        >Sketchfab</a
+      >
+    </div>
 
-	<body>
-		<div id="container"></div>
-		<div id="info">
-			<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - Rolex + aomap - 610 ko
-		</div>
+    <!-- Import maps for Three.js modules -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.154.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.154.0/examples/jsm/"
+        }
+      }
+    </script>
 
-		<script type="importmap">
-			{
-				"imports": {
-					"three": "../build/three.module.js",
-					"three/addons/": "./jsm/",
-					"tween": "./jsm/libs/tween.module.js"
-				}
-			}
-		</script>
-
-		<script type="module" src="script.js"></script>
-
-	</body>
+    <script type="module" src="script.js"></script>
+  </body>
 </html>
