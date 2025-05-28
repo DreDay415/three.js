@@ -1,24 +1,18 @@
-
 body {
-	font-family: Monospace;
-	background-color: #000;
-	color: #fff;
-	margin: 0px;
-	overflow: hidden;
+	margin: 0;
 }
-
+canvas {
+	display: block;
+}
 #info {
 	position: absolute;
 	top: 10px;
 	width: 100%;
 	text-align: center;
 	z-index: 100;
-	display:block;
+	display: block;
 }
-
-#info a, .button {
-	color: #f00;
-	font-weight: normal;
-	text-decoration: underline;
-	cursor: pointer;
+#info a {
+	color: #046;
+	font-weight: bold;
 }
