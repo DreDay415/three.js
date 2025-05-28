@@ -1,6 +1,5 @@
-
 import * as THREE from 'three';
-import * as TWEEN from 'tween';
+import * as TWEEN from './jsm/libs/tween.module.js';
 
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';

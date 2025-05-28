@@ -1,9 +1,16 @@
+
 body {
-	margin: 0;
+	font-family: Monospace;
+	background-color: #000;
+	color: #fff;
+	margin: 0px;
+	overflow: hidden;
 }
+
 canvas {
 	display: block;
 }
+
 #info {
 	position: absolute;
 	top: 10px;
@@ -12,7 +19,10 @@ canvas {
 	z-index: 100;
 	display: block;
 }
-#info a {
-	color: #046;
-	font-weight: bold;
+
+#info a, .button {
+	color: #f00;
+	font-weight: normal;
+	text-decoration: underline;
+	cursor: pointer;
 }
