@@ -24,8 +24,8 @@ function init() {
 
 	// Load HDR environment map
 	new RGBELoader()
-		.setPath("assets/")
-		.load("watch_4k.jpg", function (texture) {
+		.setPath("assets/textures/equirectangular/")
+		.load("lobe.hdr", function (texture) {
 			texture.mapping = THREE.EquirectangularReflectionMapping;
 			scene.background = texture;
 			scene.environment = texture;
@@ -33,8 +33,8 @@ function init() {
 
 	// Load watch model
 	new GLTFLoader()
-		.setPath("assets/")
-		.load("watch_v1.glb", function (gltf) {
+		.setPath("assets/models/gltf/")
+		.load("rolex.glb", function (gltf) {
 			const model = gltf.scene;
 			scene.add(model);
 		});
